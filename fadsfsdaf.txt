@@ -1,0 +1,8 @@
+https://yizeng.me/2014/03/23/evaluate-and-validate-xpath-css-selectors-in-chrome-developer-tools/
+
+// draws a border around WebElement
+WebElement element = driver.findElement(By.anything("tada"));
+js.executeScript("arguments[0].style.border='3px solid red'", element);
+
+
+String return_value = (String) js.executeScript("return document.getElementById('some_id').innerHTML");
