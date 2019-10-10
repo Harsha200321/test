@@ -1,0 +1,36 @@
+Tested the ticket fix on the production server.
+
+Please find the test results for reference.
+
+Navigating course main topic links and verify the help content is displayed.
+Navigating course sub topic links after main topic link and verify the help content is displayed.
+Navigating the course topic using Next link using mouse and verify the help content is displayed of next page.
+Navigating the course topic using Previous link using mouse and verify the help content is displayed of previous page.
+Navigating the video course topic using link using mouse and verify the video file displayed.
+Verify the video control panel option navigation is working as expected.
+Verify the video control panel option navigation is working as expected using browser and screen reader.
+
+
+Videos link:
+https://dequeuniversity.com/guide/comply/6.3/videos
+https://dequeuniversity.com/guide/comply/6.3/using-worldspace-comply/creating-and-running-scans/
+https://dequeuniversity.com/guide/comply/6.3/using-worldspace-comply/interpreting-scans-and-reports/the-issues-report/
+https://dequeuniversity.com/guide/comply/6.3/using-worldspace-comply/managing-organization-projects/create-organization-project
+https://dequeuniversity.com/guide/comply/6.3/administering-worldspace-comply/system-administration/
+
+*Test environment*:
+*Operating System*: Windows 10 professional
+*Browser + Screen reader*:
+*a*. Chrome 77.0.3865.75(64-bit) + NVDA 2019.2
+*b*. Firefox 69.0(64-bit) + NVDA 2019.2
+*c*. IE11 (64-bit) + JAWS 2018.1811.2 ILM
+*d*. Edge + Narrator
+*e*. Mac + Safari + Voiceover
+
+Minor issue observed as:
+i) When click on preferences icon, bullet points are not completely visible for the options. 
+
+
+
+
+
