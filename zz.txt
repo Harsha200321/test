@@ -1,4 +1,4 @@
-
+test
 Scenario: Navigate to course quiz page and verify details
 	When user navigate to the accessibility course page
 
