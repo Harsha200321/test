@@ -1,0 +1,92 @@
+
+Scenario: Navigate to course quiz page and verify details
+	When user navigate to the accessibility course page
+
+Scenario Outline: Verify the page title and page heading
+	Then verify the pagetitle "<pagetitle>" 
+Examples:
+	|pagetitle|
+	|Table of Contents \| Accessibility Fundamentals: Disabilities, Guidelines, and Laws|
+		
+Scenario: Verify details (table of contents, details, next) displayed on the page
+	Then verify the details displayed on the page 
+	|Table of Contents|
+	|Details|
+	|Next|
+
+Scenario: Click next button to navigate to course quiz page
+	Then click on next button till reached to quiz page
+
+Scenario Outline: Verify the current pagetitle after navigating to quiz page	
+	Then verify the pagetitle "<pagetitle>"
+Examples:
+	|pagetitle|	
+	|Quiz | Accessibility Fundamentals: Disabilities, Guidelines, and Laws|
+	
+Scenario: Verify the quiz page details
+	Then verify the navigated quiz page details
+
+Scenario: Navigate to quiz page click on the available quiz button (review quiz/begin quiz) for a course and verify details
+	Then click on reviewquiz_beginquiz button
+
+Scenario: Verify details (exit quiz, question text, options, check answer) displayed.  
+	Then verify the details displayed on the page 
+	|Exit Quiz|
+	|Question 1 of 5: Which is NOT an example of assistive technology that helps with using the Internet?|
+	| A. Screen readers|
+	| B. Screen magnifiers|
+	| C. Refreshable braille devices|
+	| D. Wheelchair|
+	| E. Mouth stick|
+	|Check Answer|
+
+Scenario: Click on exit quiz button and navigate to deque university home page
+	Then click on exit quiz button
+
+Scenario: Click on your classes button to navigate to deque university home page
+	Then click on yourclasses button to navigate to deque university home page
+
+
+
+
+----------
+
+39 
+Scenario: Answer incorrectly few questions of course quiz and verify details
+	When user navigate to the course page
+
+Scenario: Answer first question incorrect then verify details
+	Then answer first question incorrect and verify details
+
+Scenario: Verify quiz page details after exiting the quiz modal
+	Then verify the navigated quiz page details
+
+Scenario: Click on exit quiz button
+	Then click on exit quiz button
+
+Scenario: Click on your classes button to navigate to deque university home page
+	Then click on yourclasses button to navigate to deque university home page
+	
+Scenario: Answer all questions correctly of course quiz and verify details
+	When user navigate to the course page
+
+Scenario: Answer all questions correct then verify details
+	Then answer all questions correct and verify details
+	
+Scenario: Verify quiz page details after exiting the quiz modal
+	Then verify the navigated quiz page details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
